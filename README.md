@@ -6,7 +6,7 @@ API for a social network web application where users can share their thoughts, r
 # Installation
 * npm init
 * Ensure that MongoDB and Express are installed on your computer.
-* Invoke application using npm start
+* Invoke application using npm run watch
 
 # Technologies
 *  Express.js
