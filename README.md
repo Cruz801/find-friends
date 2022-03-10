@@ -16,6 +16,7 @@ API for a social network web application where users can share their thoughts, r
 *  Mongoose
 
 # Visual
+Screencastify link for walkthrough video https://drive.google.com/file/d/1a2GhiyCR4A3wko8-N_zM9t-2Fq0B7kqV/view
 
 # Contribution
 Steven Cruz
