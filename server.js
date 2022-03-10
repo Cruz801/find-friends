@@ -14,7 +14,7 @@ app.use(express.static('public'));
 
 app.use("/api", routes);
 async function connectDb () {
-await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/find-friends', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/findfriends', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });

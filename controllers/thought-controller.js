@@ -26,7 +26,7 @@ module.exports = {
     },
     getThoughtById:async(req,res) => {
         try {
-            const thoughts = await Thought.findById()
+            const thoughts = await Thought.findById(req.params.id)
             res.status(200).json(thoughts)
         } catch(err) {
             console.log(err);
@@ -50,7 +50,13 @@ module.exports = {
     },
     
     deleteThought:async(req,res) => {
-        
+        try {
+            const user = await Thought.findByIdAndDelete(req.params.id)
+            res.status(201).json(user)
+        } catch(err) {
+            console.log(err);
+            res.status(500).json(err)
+        }
     },
     addReaction:async(req,res) => {
 
